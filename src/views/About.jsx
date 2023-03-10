@@ -4,7 +4,7 @@ const About = () => {
     return (
         <main className='w-full bg-black/90 px-8 md:px-10' id="about">
             <div className='max-w-[1500px] mx-auto relative flex justify-end py-32'>
-                <img src="/bulb.webp" alt="bulb" className="w-[15rem] lg:w-[20rem] absolute opacity-50 lg:opacity-100 left-[-10rem] lg:left-0 top-0 bottom-0 my-auto drop-shadow-bulbGlow z-20" />
+                <img src="/bulb.webp" alt="bulb" className="w-[15rem] lg:w-[20rem] absolute opacity-50 lg:opacity-100 left-[-10rem] lg:left-0 top-0 bottom-0 my-auto drop-shadow-bulbGlow z-10" />
                 <div className="flex flex-col gap-y-5 w-[900px] relative z-10">
                     <p className='text-accent text-lg md:text-2xl font-bold'>— Who are we</p>
                     <h1 className='font-climate text-6xl'>About <span className='text-accent'>us</span></h1>
