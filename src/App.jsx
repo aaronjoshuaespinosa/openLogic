@@ -1,14 +1,16 @@
-import { useState } from 'react'
 import { About, Hero, Partners, Services } from "./views"
+import './index.css'
 
 function App() {
 
   return (
     <>
-      <Hero />
-      <About />
-      <Partners />
-      <Services />
+      <main className="font-poppins text-wht bg-gry">
+        <Hero />
+        <About />
+        <Partners />
+        <Services />
+      </main>
     </>
   )
 }
