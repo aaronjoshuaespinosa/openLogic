@@ -38,7 +38,10 @@ const Hero = () => {
                 <div className='max-w-[1500px] mx-auto w-full h-full relative z-10'>
                     <motion.div className='w-fit flex flex-col gap-y-5' variants={containerVariants} initial="hidden" animate="visible">
                         <motion.p className='text-accent font-bold text-base md:text-xl' variants={childVariants}>WELCOME, WE ARE</motion.p>
-                        <motion.h1 className='font-climate text-6xl md:text-8xl' variants={childVariants}>OPEN <span className='text-accent'>LOGIC</span></motion.h1>
+                        <motion.div className='flex flex-col lg:flex-row gap-x-4 font-climate text-6xl md:text-8xl' variants={childVariants}>
+                            <p className='cursor-pointer hover:drop-shadow-whiteGlow transition-all ease-out duration-300'>OPEN</p>
+                            <span className='text-accent cursor-pointer hover:drop-shadow-accentGlow transition-all ease-out duration-300'>LOGIC</span>
+                        </motion.div>
                         <motion.p className='opacity-70 text-sm md:text-lg max-w-[55rem]' initial={{ opacity: 0, x: -250 }} animate={{ opacity: 0.7, x: 0 }} transition={{ duration: 0.5, delay: 0.4 }}>Our experience and expertise in the crypto industry have established us as a trusted partner that can guide both seasoned and novice investors through the constantly evolving landscape of cryptocurrency with confidence.</motion.p>
                     </motion.div>
                 </div>
