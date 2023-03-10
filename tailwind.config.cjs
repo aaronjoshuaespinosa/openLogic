@@ -4,7 +4,6 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'inter': ['Inter'],
         'climate': ['Climate Crisis'],
         'poppins': ['Poppins']
       },
