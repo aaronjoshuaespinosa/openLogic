@@ -1,5 +1,6 @@
 import { About, Hero, Partners, Services } from "./views"
 import './index.css'
+import { Footer } from "./components"
 
 function App() {
 
@@ -8,8 +9,9 @@ function App() {
       <main className="font-poppins text-wht bg-gry">
         <Hero />
         <About />
-        <Partners />
         <Services />
+        <Partners />
+        <Footer />
       </main>
     </>
   )
