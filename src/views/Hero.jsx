@@ -57,7 +57,7 @@ const Hero = () => {
                         </motion.div>
                     )}
                 </div>
-                <motion.img initial={{ opacity: 0, x: "50%" }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.7 }} src="/whale-hero.webp" alt="hero" className="absolute object-cover right-0 top-0 h-full z-0 opacity-40 lg:opacity-100" />
+                <motion.img initial={{ opacity: 0, x: "50%" }} animate={{ opacity: 0.5, x: 0 }} transition={{ duration: 0.7 }} src="/whale-hero.webp" alt="hero" className="absolute object-cover right-0 top-0 h-full z-0 opacity-40 lg:opacity-100" />
                 <div className='bg-accent w-80 h-80 rounded-full blur-[230px] absolute z-10 bottom-[-5rem] left-[-5rem] hidden md:block'></div>
             </main>
         </>
