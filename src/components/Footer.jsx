@@ -6,8 +6,8 @@ const Footer = () => {
     return (
         <footer className='bg-gradient-to-b from-gry to-blk flex flex-col w-full'>
             <div className="flex items-center justify-center overflow-hidden h-[15rem] md:h-[25rem] relative">
-                <img src="https://ik.imagekit.io/xzgmktvzg/Open_Logic/whale.png?ik-sdk-version=javascript-1.4.3&updatedAt=1678431301657" alt="whale" className="mt-10 md:mt-20 relative z-10" />
-                <img src="https://ik.imagekit.io/xzgmktvzg/Open_Logic/topog2.png?ik-sdk-version=javascript-1.4.3&updatedAt=1678431281601" alt="topography background" className="absolute opacity-20 h-full w-full object-cover" />
+                <img src="/whale.webp" alt="whale" className="mt-10 md:mt-20 relative z-10" />
+                <img src="/topog.webp" className="absolute opacity-40 h-full w-full object-cover" />
                 <div className="bg-gradient-to-b from-gry to-transparent w-full h-[10rem] absolute top-0 z-20"/>
             </div>
             <div className="w-full border-t-wht border-t-[1px]">
