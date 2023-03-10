@@ -18,7 +18,7 @@ const Partners = () => {
                     )}
                 </div>
             </div>
-            <div className='w-[20rem] h-[20rem] bg-accent rounded-full blur-[150px] absolute left-0 top-0 opacity-50' />
+            {/* <div className='w-[20rem] h-[20rem] bg-accent rounded-full blur-[150px] absolute left-0 top-0 opacity-50' /> */}
         </main>
     )
 }
