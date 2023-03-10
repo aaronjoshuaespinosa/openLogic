@@ -13,6 +13,9 @@ module.exports = {
         wht: "#ffffff",
         gry: "#1c2227",
         accent: "#df9328"
+      },
+      boxShadow: {
+        glow: "0 0 1000px 80px rgba(223,147,40,0.7)"
       }
     },
   },
