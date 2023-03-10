@@ -1,14 +1,17 @@
+import { FaBitcoin, FaQuestionCircle } from "react-icons/fa";
+import { AiFillProject } from "react-icons/ai";
+
 export const navlinks = [
     {
-        link: "#",
+        link: "#about",
         name: "ABOUT US"
     },
     {
-        link: "#",
+        link: "#services",
         name: "SERVICES"
     },
     {
-        link: "#",
+        link: "#partners",
         name: "OUR PARTNERS"
     },
 ]
@@ -31,17 +34,17 @@ export const services = [
     {
         label: "Liquidity Provider",
         desc: "Promising ventures that require liquidity for there projects. Please feel free to present your proposals, as I am willing to serve as a liquidity provider for your upcoming token.",
-        icon: ""
+        icon: <FaBitcoin />
     },
     {
         label: "Consulting For Projects",
         desc: "I'll provide consultation for your new token and demonstrate similar strategies that I use to ensure that every launch achieves at least a 500k market capitalization.",
-        icon: ""
+        icon: <FaQuestionCircle />
     },
     {
         label: "Development For Projects",
         desc: "I'll take care of the deployment and management of everything on the development side for your project, and also provide some minor consulting.",
-        icon: ""
+        icon: <AiFillProject />
     },
 ]
 

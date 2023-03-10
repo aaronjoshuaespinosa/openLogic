@@ -26,7 +26,7 @@ const Hero = () => {
                         </div>
                     )}
                 </div>
-                <img src="/whale-hero.webp" alt="hero" className="absolute object-cover right-0 top-0 h-full z-0 opacity-40 md:opacity-100" />
+                <img src="/whale-hero.webp" alt="hero" className="absolute object-cover right-0 top-0 h-full z-0 opacity-40 lg:opacity-100" />
                 <div className='bg-accent w-80 h-80 rounded-full blur-[230px] absolute z-10 bottom-[-5rem] left-[-5rem] hidden md:block'></div>
             </main>
         </>
