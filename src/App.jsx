@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <main className="font-poppins text-wht bg-gry">
+      <main className="font-poppins text-wht bg-gry overflow-x-hidden">
         <Hero />
         <About />
         <Services />

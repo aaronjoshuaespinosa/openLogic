@@ -18,6 +18,7 @@ module.exports = {
       },
       dropShadow: {
         bulbGlow: "0 0 30px rgba(255,255,255,0.3)",
+        hover: '0 3px 0 #df9328'
       },
     },
   },
