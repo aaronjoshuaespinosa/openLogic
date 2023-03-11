@@ -43,7 +43,7 @@ const Hero = () => {
                             <span className='text-accent cursor-pointer hover:drop-shadow-accentGlow transition-all ease-out duration-300'>LOGIC</span>
                         </motion.div>
                         <motion.p className='opacity-70 text-sm md:text-lg max-w-[55rem]' initial={{ opacity: 0, x: -250 }} animate={{ opacity: 0.7, x: 0 }} transition={{ duration: 0.5, delay: 0.4 }}>We are long established conglomerate that specializes in the crypto industry. We have established ourselves as a trusted partner that can guide both seasoned and novice investors through the constantly evolving landscape of cryptocurrency with confidence.</motion.p>
-                        <motion.button initial={{ opacity: 0, x: -250 }} animate={{ opacity: 0.7, x: 0 }} transition={{ duration: 0.5, delay: 0.5 }} className='border-[1px] border-accent bg-accent/20 rounded-[5px] py-3 px-5 w-full md:w-fit hover:bg-accent/40 transition-all ease-out duration-300'>Contact Now</motion.button>
+                        <motion.button initial={{ opacity: 0, x: -250 }} animate={{ opacity: 0.7, x: 0 }} transition={{ duration: 0.5, delay: 0.4 }} className='border-[1px] border-accent bg-accent/20 rounded-[5px] py-3 px-5 w-full md:w-fit hover:bg-accent/40 transition-all ease-out duration-300'>Contact Now</motion.button>
                     </motion.div>
                 </div>
 

@@ -54,7 +54,7 @@ export const services = [
     },
     {
         label: "Development For Projects",
-        desc: "I'll take care of the deployment and management of everything on the development side for your project, and also provide some minor consulting.",
+        desc: "We'll take care of the deployment and management of everything on the development side for your project, and also provide some minor consulting.",
         icon: <AiFillProject />
     },
 ]
@@ -62,17 +62,20 @@ export const services = [
 export const partners = [
     {
         name: "CMC AND CG",
-        desc: "I can fast-track coinmarketcap and coingecko listings, will need to check if project meets requirement before payment.",
-        img: "/cg_cmc.webp"
+        desc: "We can fast-track coinmarketcap and coingecko listings, will need to check if project meets requirement before payment.",
+        img: "/cg_cmc.webp",
+        price: "Contact Now",
     },
     {
         name: "Website Development",
         desc: "We will create a top-notch crypto webpage for your upcoming token that is of superior quality.",
-        img: "/web.webp"
+        img: "/web.webp",
+        price: "Contact Now",
     },
     {
         name: "DEXTOOLS TRENDING",
-        desc: "I can trend any project based on the spot you want on dextools.",
-        img: "/dextools-white.webp"
+        desc: "We can trend any project based on the spot you want on dextools.",
+        img: "/dextools-white.webp",
+        price: "Contact Now",
     },
 ]
