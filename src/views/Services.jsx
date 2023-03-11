@@ -49,7 +49,7 @@ const Services = () => {
                 </div>
                 <motion.div className='flex flex-col md:flex-row gap-x-6 gap-y-6' variants={containerVariants} initial="hidden" ref={serviceRef} animate={`${serviceView ? "visible" : ""}`}>
                     {services.map((service, i) =>
-                        <motion.div key={i} className="bg-blk p-8 rounded-[15px] flex flex-col gap-y-5 text-center items-center cursor-pointer group hover:drop-shadow-hover transition-all ease-out duration-300" variants={childVariants}>
+                        <motion.div key={i} className="bg-blk p-8 rounded-[15px] flex flex-col gap-y-5 text-center items-center cursor-pointer group hover:drop-shadow-hover transition-all ease-out duration-300 w-full" variants={childVariants}>
                             <p className='text-8xl group-hover:scale-[1.1] group-hover:rotate-[5deg] transition-all ease-in-out duration-300'>{service.icon}</p>
                             <h1 className='uppercase text-accent text-lg font-bold tracking-widest'>{service.label}</h1>
                             <p className='text-sm opacity-70'>{service.desc}</p>
