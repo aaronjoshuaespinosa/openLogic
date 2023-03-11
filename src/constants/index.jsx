@@ -66,9 +66,9 @@ export const partners = [
         img: "/cg_cmc.webp"
     },
     {
-        name: "Website Developement",
+        name: "Website Development",
         desc: "We will create a top-notch crypto webpage for your upcoming token that is of superior quality.",
-        img: "/cg_cmc.webp"
+        img: "/web.webp"
     },
     {
         name: "DEXTOOLS TRENDING",
