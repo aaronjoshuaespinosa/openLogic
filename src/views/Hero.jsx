@@ -37,20 +37,21 @@ const Hero = () => {
             <main className='min-h-screen px-8 md:px-10 flex items-center text-center md:text-left relative'>
                 <div className='max-w-[1500px] mx-auto w-full h-full relative z-10'>
                     <motion.div className='w-fit flex flex-col gap-y-5' variants={containerVariants} initial="hidden" animate="visible">
-                        <motion.p className='text-accent font-bold text-base md:text-xl' variants={childVariants}>WELCOME, WE ARE</motion.p>
+                        <motion.p className='text-accent font-bold text-base md:text-xl' variants={childVariants}>WELCOME TO</motion.p>
                         <motion.div className='flex flex-col lg:flex-row gap-x-4 font-climate text-6xl md:text-8xl' variants={childVariants}>
                             <p className='cursor-pointer hover:drop-shadow-whiteGlow transition-all ease-out duration-300'>OPEN</p>
                             <span className='text-accent cursor-pointer hover:drop-shadow-accentGlow transition-all ease-out duration-300'>LOGIC</span>
                         </motion.div>
-                        <motion.p className='opacity-70 text-sm md:text-lg max-w-[55rem]' initial={{ opacity: 0, x: -250 }} animate={{ opacity: 0.7, x: 0 }} transition={{ duration: 0.5, delay: 0.4 }}>Our experience and expertise in the crypto industry have established us as a trusted partner that can guide both seasoned and novice investors through the constantly evolving landscape of cryptocurrency with confidence.</motion.p>
+                        <motion.p className='opacity-70 text-sm md:text-lg max-w-[55rem]' initial={{ opacity: 0, x: -250 }} animate={{ opacity: 0.7, x: 0 }} transition={{ duration: 0.5, delay: 0.4 }}>We are long established conglomerate that specializes in the crypto industry. We have established ourselves as a trusted partner that can guide both seasoned and novice investors through the constantly evolving landscape of cryptocurrency with confidence.</motion.p>
+                        <motion.button initial={{ opacity: 0, x: -250 }} animate={{ opacity: 0.7, x: 0 }} transition={{ duration: 0.5, delay: 0.5 }} className='border-[1px] border-accent bg-accent/20 rounded-[5px] py-3 px-5 w-full md:w-fit'>Contact Now</motion.button>
                     </motion.div>
                 </div>
 
-                <div className='absolute bottom-10 left-0 right-0 w-fit mx-auto flex z-10 gap-x-10 flex-wrap justify-center'>
+                <div className='absolute bottom-3 md:bottom-10 left-0 right-0 w-fit mx-auto flex z-10 gap-x-10 flex-wrap justify-center'>
                     {heroPartners.map((partner, i) =>
-                        <motion.div className="flex gap-x-3 items-center" key={i} initial={{ opacity: 0, y: "200%" }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: i * 0.1 }}>
+                        <motion.div className="flex gap-x-3 items-center py-1" key={i} initial={{ opacity: 0, y: "200%" }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: i * 0.1 }}>
                             <div className="bg-accent/30 border-[1px] border-accent p-1 md:p-3 rounded-full">
-                                <img src={partner.img} alt={partner.name} className="w-5 md:w-9" />
+                                <p className="text-lg md:text-2xl" style={{ color: `${partner.color}` }}>{partner.img}</p>
                             </div>
 
                             <h1 className='font-bold text-accent text-sm md:text-base'>{partner.name}</h1>

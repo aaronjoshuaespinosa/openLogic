@@ -1,5 +1,8 @@
-import { FaBitcoin, FaQuestionCircle } from "react-icons/fa";
+import { FaEthereum, FaTelegramPlane } from "react-icons/fa";
+import { GiTeacher } from "react-icons/gi";
 import { AiFillProject } from "react-icons/ai";
+import { BsTwitter, BsTelegram } from "react-icons/bs";
+import { MdEmail } from "react-icons/md";
 
 export const navlinks = [
     {
@@ -8,38 +11,46 @@ export const navlinks = [
     },
     {
         link: "#services",
-        name: "SERVICES"
+        name: "WHY OPEN LOGIC"
     },
     {
         link: "#partners",
-        name: "OUR PARTNERS"
+        name: "OUR SERVICES"
     },
 ]
 export const heroPartners = [
     { 
-        name: "DEXTOOLS",
-        img: "/dextools.webp",
+        name: "TWITTER",
+        img: <BsTwitter/>,
+        color: "#00acee",
     },
     { 
-        name: "COIN MARKET CAP",
-        img: "/cmc.webp",
+        name: "TELEGRAM",
+        img: <FaTelegramPlane/>,
+        color: "#229ED9",
     },
     { 
-        name: "COIN GECKO",
-        img: "/cg.webp",
+        name: "CALL CHANNEL",
+        img: <BsTelegram/>,
+        color: "#229ED9",
+    },
+    { 
+        name: "EMAIL",
+        img: <MdEmail/>,
+        color: "#ffffff",
     },
 ]
 
 export const services = [
     {
         label: "Liquidity Provider",
-        desc: "Promising ventures that require liquidity for there projects. Please feel free to present your proposals, as I am willing to serve as a liquidity provider for your upcoming token.",
-        icon: <FaBitcoin />
+        desc: "Do you have an idea for a promising ventures that require liquidity for there project?  Please feel free to present your proposals, as we are willing to serve as a liquidity provider for your upcoming token.",
+        icon: <FaEthereum />
     },
     {
         label: "Consulting For Projects",
-        desc: "I'll provide consultation for your new token and demonstrate similar strategies that I use to ensure that every launch achieves at least a 500k market capitalization.",
-        icon: <FaQuestionCircle />
+        desc: "We can provide consultation for your new tokens and demonstrate similar strategies that have been used in the passed with great success to ensure that every launch achieves at least a 500k market capitalization.",
+        icon: <GiTeacher />
     },
     {
         label: "Development For Projects",
@@ -52,6 +63,11 @@ export const partners = [
     {
         name: "CMC AND CG",
         desc: "I can fast-track coinmarketcap and coingecko listings, will need to check if project meets requirement before payment.",
+        img: "/cg_cmc.webp"
+    },
+    {
+        name: "Website Developement",
+        desc: "We will create a top-notch crypto webpage for your upcoming token that is of superior quality.",
         img: "/cg_cmc.webp"
     },
     {

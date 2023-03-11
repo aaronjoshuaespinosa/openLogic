@@ -45,7 +45,7 @@ const Services = () => {
             <div className='max-w-[1500px] mx-auto py-32 flex flex-col gap-y-10 relative z-10'>
                 <div className='flex flex-col md:flex-row justify-between items-center gap-y-10'>
                     <motion.p initial={{ opacity: 0, x: "-100%" }} ref={titleRef} animate={titleView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.6 }} className='max-w-[500px] font-climate text-4xl text-center md:text-left'>Explore <span className='text-accent'>why</span> you need Open <span className='text-accent'>Logic</span></motion.p>
-                    <motion.p initial={{ opacity: 0, x: "100%" }} ref={descRef} animate={descView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.6 }} className='max-w-[400px] text-sm opacity-70 text-center md:text-left'>Our services to make informed decisions with reliable information, tools, and resources for the cryptocurrency market.</motion.p>
+                    <motion.p initial={{ opacity: 0, x: "100%" }} ref={descRef} animate={descView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.6 }} className='max-w-[400px] text-sm opacity-70 text-center md:text-left'>Our services will aid you in making informed decisions. Our reliable information, tools and resources will put you on the road to success.</motion.p>
                 </div>
                 <motion.div className='flex flex-col md:flex-row gap-x-6 gap-y-6' variants={containerVariants} initial="hidden" ref={serviceRef} animate={`${serviceView ? "visible" : ""}`}>
                     {services.map((service, i) =>
