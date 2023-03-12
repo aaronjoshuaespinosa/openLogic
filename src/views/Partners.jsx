@@ -44,7 +44,7 @@ const Partners = () => {
                 {/* <motion.h1 initial={{ opacity: 0, y: "100%" }} ref={titleRef} animate={titleView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className='font-climate text-4xl text-center'>OUR SERVICES</motion.h1> */}
                 <motion.div className='flex flex-col md:flex-row gap-x-6 gap-y-6' variants={containerVariants} initial="hidden" ref={partnerRef} animate={`${partnerView ? "visible" : ""}`}>
                     {partners.map((partner, i) =>
-                        <motion.div key={i} className="bg-blk p-8 rounded-[15px] flex flex-col gap-y-5 text-center items-center group hover:drop-shadow-hover transition-all ease-out duration-300 w-full h-auto lg:h-[23rem]" variants={childVariants}>
+                        <motion.div key={i} className="bg-blk p-8 rounded-[15px] flex flex-col gap-y-5 text-center items-center justify-center group hover:drop-shadow-hover transition-all ease-out duration-300 w-full h-auto lg:h-[23rem]" variants={childVariants}>
                             <img src={partner.img} alt={partner.name} className="w-20 h-20 group-hover:scale-[1.1] group-hover:rotate-[5deg] transition-all ease-in-out duration-300" />
                             <h1 className='uppercase text-accent text-lg font-bold tracking-widest'>{partner.name}</h1>
                             <p className='text-sm opacity-70'>{partner.desc}</p>
