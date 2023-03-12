@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { navlinks } from '../constants'
-import { RxHamburgerMenu } from "react-icons/rx";
+import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 import { motion } from 'framer-motion';
 
 const Nav = () => {
@@ -15,6 +15,10 @@ const Nav = () => {
             setScrollPosition(false);
         }
     };
+
+    const handleNav = () => {
+        setActive(current => !current)
+    }
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll, { passive: true });
@@ -32,7 +36,13 @@ const Nav = () => {
                         <motion.a href={link.link} key={i} initial={{ opacity: 0, y: "-300%" }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: i * 0.2 }}><p className='cursor-pointer hover:text-accent transition-all ease-in-out duration-200'>{link.name}</p></motion.a>
                     )}
                 </div>
-                <RxHamburgerMenu className='text-accent text-2xl block lg:hidden' />
+                <RxHamburgerMenu className='text-accent text-2xl block lg:hidden' onClick={handleNav} />
+            </div>
+            <div className="top-0 bottom-0 right-0 h-screen fixed bg-blk/90 backdrop-blur-2xl z-30 transition-all ease-in-out duration-300 px-20 flex flex-col gap-y-5" style={active ? { transform: "translateX(0%)", opacity: 1 } : { transform: "translateX(100%)", opacity: 0 }}>
+                <RxCross1 className='text-accent text-2xl block lg:hidden my-8 mx-auto' onClick={handleNav} />
+                {navlinks.map((link, i) =>
+                    <motion.a href={link.link} key={i} initial={{ opacity: 0, y: "-300%" }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: i * 0.2 }}><p className='cursor-pointer hover:text-accent transition-all ease-in-out duration-200 text-center text-xl' onClick={handleNav}>{link.name}</p></motion.a>
+                )}
             </div>
         </nav>
     )
