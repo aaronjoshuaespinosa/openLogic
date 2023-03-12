@@ -4,7 +4,8 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { motion } from 'framer-motion';
 
 const Nav = () => {
-    const [scrolled, setScrollPosition] = useState(0);
+    const [scrolled, setScrollPosition] = useState(0)
+    const [active, setActive] = useState(false)
 
     const handleScroll = () => {
         const position = window.pageYOffset;
